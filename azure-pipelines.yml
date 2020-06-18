@@ -14,8 +14,3 @@ steps:
     repository: $(imageName)
     command: build
     Dockerfile: app/Dockerfile
-- task: Docker@2
-  inputs:
-    repository: 'DocContainerReg'
-    command: 'buildAndPush'
-    Dockerfile: '**/Dockerfile'
